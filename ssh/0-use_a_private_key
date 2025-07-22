@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Script to connect to server 8.8.8.8
+
+ssh -i ~/.ssh/school ubuntu@8.8.8.8
+
