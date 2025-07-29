@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# The script installs nginx to the server
+
+apt-get update -y
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+echo "Welcome Holberton School!" > /var/www/html/index.html
+service nginx start
