@@ -16,8 +16,8 @@ frontend  kethia-frontend
         default_backend kethia-backend
 backend kethia-backend
         balance roundrobin
-        server 6551-web-01 52.70.149.196:80 check
-        server 6551-web-02 3.91.180.23:80 check
+        server web-01 52.70.149.196:80 check
+        server web-02 3.91.180.23:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
