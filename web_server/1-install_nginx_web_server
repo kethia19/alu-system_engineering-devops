@@ -3,6 +3,6 @@
 
 apt-get update -y
 apt-get install -y nginx
-ufw allow 'Nginx HTTP'
-echo "Welcome Holberton School!" > /var/www/html/index.html
 service nginx start
+ufw allow 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.html
